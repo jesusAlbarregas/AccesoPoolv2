@@ -27,8 +27,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Jesus
  */
-@WebServlet(name = "AccesoBD", urlPatterns = {"/AccesoBD"})
-public class AccesoBD extends HttpServlet {
+@WebServlet(name = "FrontController", urlPatterns = {"/FrontController"})
+public class FrontController extends HttpServlet {
 
     /**
      * Handles the HTTP <code>GET</code> method.

@@ -5,15 +5,15 @@
     <head>
         <c:url var="estilo" value="/CSS/estilo.css" scope="application" />
         <c:set var="contexto" value="${pageContext.request.contextPath}" scope="application"/>
-        <c:import url="INC/cabecera.jsp">
-            <c:param name="titulo" value="Avistamientos" />
-            <c:param name="estilo" value="${estilo}" />
-        </c:import>
+        <jsp:include page="/INC/cabecera.jsp">
+            <jsp:param name="titulo" value="Avistamientos" />
+            <jsp:param name="estilo" value="${estilo}" />
+        </jsp:include>
     </head>
     <body>
         <div id="principal">
         <h1>Página de avistamientos</h1>
-        <form action="AccesoBD" method="post">
+        <form action="FrontController" method="post">
             <div class="dato">
                     <label>Introduce una anilla</label>
                     <input type="text" name="anilla" size="20" placeholder="Ej. 123" />
