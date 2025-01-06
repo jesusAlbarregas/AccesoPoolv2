@@ -18,7 +18,7 @@
                 <li>Lugar: <c:out value="${ave.lugar}" /></li>
                 <li>Fecha: <c:out value="${ave.fecha}" /></li>
             </ul>
-                <p class="volver"><a href="${contexto}/FrontController">Volver</a></p>
+                <p class="volver"><a href="${contexto}/FronController">Volver</a></p>
         </div>
     </body>
 </html>
